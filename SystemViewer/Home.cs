@@ -11,11 +11,13 @@ using System.Diagnostics;
 using System.Management;
 using Microsoft.Win32;
 using System.Threading;
+using System.IO;//per hdd
 
 namespace SystemViewer
 {
     public partial class Home : Form
     {
+
         int i, a = 0;
         int r = 0, g = 0, b = 0;
         float flt, y;
@@ -196,23 +198,6 @@ namespace SystemViewer
             else
                 crclprgrsbrCpu.ProgressColor = Color.White;
         }
-
-        public float ramtotMB()//estrae la quantità totale di RAM (MB) utilizzabile dal sistema
-        {
-            ObjectQuery wql = new ObjectQuery("SELECT * FROM Win32_OperatingSystem");//LENTOOO
-            ManagementObjectSearcher searcher = new ManagementObjectSearcher(wql);
-            ManagementObjectCollection results = searcher.Get();
-
-            foreach (ManagementObject result in results)
-            {
-                ramsize = Convert.ToString(result["TotalVisibleMemorySize"]);
-                y = Convert.ToInt32(ramsize);
-                y = y / 1024; // conversione da KiloByte a MegaByte con decimali
-                i = (int)y;
-            }
-
-            return i;
-        }
         
         private void crclprgrsbrCpu_Click(object sender, EventArgs e)
         {
@@ -265,6 +250,49 @@ namespace SystemViewer
             lbltotal.Text = systemLanguage(enHome, itHome, 4) + ": " + totram() + " GB";
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ManagementObjectSearcher myVideoObject = new ManagementObjectSearcher("select * from Win32_VideoController");
+            StringBuilder sb = new StringBuilder();
+
+            foreach (ManagementObject obj in myVideoObject.Get())
+            {
+                sb.AppendLine("Name  -  " + obj["Name"]);
+                sb.AppendLine("Status  -  " + obj["Status"]);
+                sb.AppendLine("Caption  -  " + obj["Caption"]);
+                sb.AppendLine("DeviceID  -  " + obj["DeviceID"]);
+                double vram = Convert.ToDouble(obj["AdapterRAM"]);
+                sb.AppendLine("AdapterRAM  -  " + vram/1024/1024/1024 + " GB");
+                sb.AppendLine("AdapterDACType  -  " + obj["AdapterDACType"]);
+                sb.AppendLine("DriverVersion  -  " + obj["DriverVersion"]);
+                sb.AppendLine("VideoProcessor  -  " + obj["VideoProcessor"]);
+
+            }
+            MessageBox.Show(sb.ToString());
+        }
+
+        private void btnINFOHDD_Click(object sender, EventArgs e)
+        {
+            DriveInfo[] allDrives = DriveInfo.GetDrives();
+            StringBuilder sb = new StringBuilder();
+            foreach (DriveInfo d in allDrives)
+            {
+                sb.AppendLine("Drive " + d.Name);
+                sb.AppendLine("  Drive type: " + d.DriveType);
+                if (d.IsReady == true)
+                {
+                    sb.AppendLine("  Volume label: " + d.VolumeLabel);
+                    sb.AppendLine("  File system: " + d.DriveFormat);
+                    float free = d.TotalFreeSpace;
+                    sb.AppendLine("  Total available space:" + convertFromByteToGiga(free) + " GB");
+                    float totalsize = d.TotalSize;
+                    sb.AppendLine("  Total size of drive: " + convertFromByteToGiga(totalsize) + " GB");
+                }
+            }
+            MessageBox.Show(sb.ToString());
+        }
+
+
         private void informationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (a == 0)
@@ -278,6 +306,23 @@ namespace SystemViewer
                 showHome();
                 a--;
             }
+        }
+
+        public float ramtotMB()//estrae la quantità totale di RAM (MB) utilizzabile dal sistema
+        {
+            ObjectQuery wql = new ObjectQuery("SELECT * FROM Win32_OperatingSystem");//LENTOOO
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher(wql);
+            ManagementObjectCollection results = searcher.Get();
+
+            foreach (ManagementObject result in results)
+            {
+                ramsize = Convert.ToString(result["TotalVisibleMemorySize"]);
+                y = Convert.ToInt32(ramsize);
+                y = y / 1024; // conversione da KiloByte a MegaByte con decimali
+                i = (int)y;
+            }
+
+            return i;
         }
 
         public float ramtotGB(float f)// trasforma la ram da MB a GB, con 2 numeri decimali (es 9,86 GB)
@@ -330,6 +375,20 @@ namespace SystemViewer
                     crclprgrsbrCpu.ProgressColor = Color.Red;
                 }
             }
+        }
+
+        public float convertFromByteToGiga(float f)//converte da byte a giga con centesimi (es 50,15)
+        {
+            int i;
+            f = f / 1024 / 1024;
+            i = (int)f;
+            i = i / 8;
+            f = i;
+            f = f / 128 * 100;
+            i = (int)f;
+            f = i;
+            f = f / 100;
+            return f;
         }
     }
 }

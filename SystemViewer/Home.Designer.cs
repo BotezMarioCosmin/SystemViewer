@@ -56,6 +56,8 @@
             this.rdbtnCustom = new System.Windows.Forms.RadioButton();
             this.rdbtnPercentage = new System.Windows.Forms.RadioButton();
             this.rdbtnCpuDefault = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnINFOHDD = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -415,12 +417,34 @@
             this.rdbtnCpuDefault.UseVisualStyleBackColor = true;
             this.rdbtnCpuDefault.CheckedChanged += new System.EventHandler(this.rdbtnCpuDefault_CheckedChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(473, 189);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnINFOHDD
+            // 
+            this.btnINFOHDD.Location = new System.Drawing.Point(165, 504);
+            this.btnINFOHDD.Name = "btnINFOHDD";
+            this.btnINFOHDD.Size = new System.Drawing.Size(68, 23);
+            this.btnINFOHDD.TabIndex = 61;
+            this.btnINFOHDD.Text = "INFO";
+            this.btnINFOHDD.UseVisualStyleBackColor = true;
+            this.btnINFOHDD.Click += new System.EventHandler(this.btnINFOHDD_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(982, 553);
+            this.Controls.Add(this.btnINFOHDD);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.crclprgrsbHdd);
@@ -485,5 +509,7 @@
         private System.Windows.Forms.RadioButton rdbtnCustom;
         private System.Windows.Forms.RadioButton rdbtnPercentage;
         private System.Windows.Forms.RadioButton rdbtnCpuDefault;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnINFOHDD;
     }
 }
