@@ -85,6 +85,8 @@ namespace SystemViewer
         float flt, y;
         string ramsize, name;
         float hddtotal, hddfree;
+        public static bool forminf;
+        public static bool cpuclick = false, ramclick = false, hddclick = false;
 
         string[] enHome = { "Model", "Current clock", "Usage", "Available", "Total", "Used", "Activity", "Used", "Settings", "Informations", "Free", "Stick capacity", "Temperature", "System name" };
         string[] itHome = { "Modello", "Frequenza attuale", "Utilizzo", "Disponibile", "Totale", "Utilizzata", "Attività", "Utilizzato", "Impostazioni", "Informazioni", "Disponibile", "Capacità banco", "Temperatura", "Nome sistema" };
@@ -359,8 +361,17 @@ namespace SystemViewer
                     }
                     else
                     {
-                        lblGPUTEMP.ForeColor = Color.DodgerBlue;
-                        helpGpuTemp.Hide();
+                        if (Settings.FormColor == 0)
+                        {
+                            lblGPUTEMP.ForeColor = Color.DodgerBlue;
+                            helpGpuTemp.Hide();
+                        }
+                        else if (Settings.FormColor == 1)
+                        {
+                            lblGPUTEMP.ForeColor = Color.FromArgb(0,200,0);
+                            helpGpuTemp.Hide();
+                        }
+
                     }
                 }
                 else
@@ -395,7 +406,8 @@ namespace SystemViewer
 
             }
             catch (Exception ex)
-            { 
+            {
+                forminf = true;
                 gpuErrorMessage = ex.Message;
                 lblGpuVram.Text = "VRAM: N/D";
             }
@@ -560,6 +572,7 @@ namespace SystemViewer
         }
         private void crclprgrsbrCpu_Click(object sender, EventArgs e)
         {
+            cpuclick = true;
             Settings Settings = new Settings();
             Settings.Show();
             Settings.Left = this.Left;
@@ -578,7 +591,6 @@ namespace SystemViewer
             Settings.Size = this.Size;
             timer1.Stop();
             this.Hide();
-            //this.Opacity = 0.0;
         }
 
         private void informationsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1158,6 +1170,7 @@ namespace SystemViewer
 
         private void crclprgrsbrRam_Click(object sender, EventArgs e)
         {
+            ramclick = true;
             Settings Settings = new Settings();
             Settings.Show();
             Settings.Left = this.Left;
@@ -1169,6 +1182,7 @@ namespace SystemViewer
 
         private void crclprgrsbHdd_Click(object sender, EventArgs e)
         {
+            hddclick = true;
             Settings Settings = new Settings();
             Settings.Show();
             Settings.Left = this.Left;
@@ -1180,6 +1194,7 @@ namespace SystemViewer
 
         private void crclrprgrsbrHddUsed_Click(object sender, EventArgs e)
         {
+            hddclick = true;
             Settings Settings = new Settings();
             Settings.Show();
             Settings.Left = this.Left;

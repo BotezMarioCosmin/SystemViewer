@@ -292,12 +292,12 @@
             // 
             this.lblSettings.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSettings.AutoSize = true;
-            this.lblSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSettings.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblSettings.Location = new System.Drawing.Point(13, 55);
             this.lblSettings.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSettings.Name = "lblSettings";
-            this.lblSettings.Size = new System.Drawing.Size(151, 31);
+            this.lblSettings.Size = new System.Drawing.Size(164, 36);
             this.lblSettings.TabIndex = 60;
             this.lblSettings.Text = "SETTINGS";
             // 
@@ -320,7 +320,7 @@
             // textBoxTempCpu
             // 
             this.textBoxTempCpu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTempCpu.Location = new System.Drawing.Point(49, 76);
+            this.textBoxTempCpu.Location = new System.Drawing.Point(104, 78);
             this.textBoxTempCpu.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTempCpu.Name = "textBoxTempCpu";
             this.textBoxTempCpu.Size = new System.Drawing.Size(91, 30);
@@ -622,7 +622,7 @@
             // textBoxTempGpu
             // 
             this.textBoxTempGpu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTempGpu.Location = new System.Drawing.Point(53, 79);
+            this.textBoxTempGpu.Location = new System.Drawing.Point(105, 79);
             this.textBoxTempGpu.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTempGpu.Name = "textBoxTempGpu";
             this.textBoxTempGpu.Size = new System.Drawing.Size(91, 30);
@@ -803,14 +803,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1312, 690);
-            this.Controls.Add(this.panelSystem);
+            this.Controls.Add(this.panelGPU);
             this.Controls.Add(this.panelCPU);
             this.Controls.Add(this.panelRAM);
             this.Controls.Add(this.panelHDD);
             this.Controls.Add(this.lblSettings);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.panelGPU);
+            this.Controls.Add(this.panelSystem);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Settings";

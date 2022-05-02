@@ -37,6 +37,22 @@ namespace SystemViewer
             hideAll();
             timer1.Start();
 
+            if (Home.cpuclick == true)//progressbarclick
+            {
+                lblCPU_Click(sender, e);
+            }
+            
+            if (Home.ramclick == true)//progressbarclick
+            {
+                lblRAM_Click(sender, e);
+            }
+
+            if (Home.hddclick == true)//progressbarclick
+            {
+                lblHDD_Click(sender, e);
+            }
+
+
             if (Language == 1)//lingua precedentemente assegnata
             {
                 rdbtneng.Checked = false;
@@ -348,6 +364,8 @@ namespace SystemViewer
             rdbtnPercentageHDD.Text = systemLanguage(enSettings, itSettings, 10);
             lblWarningWhenCPU.Text = "Mostra un'avvertenza quando la temperatura della CPU è più alta di:";
             lblWarningWhenGPU.Text = "Mostra un'avvertenza quando la temperatura della GPU è più alta di:";
+            lblSet.Text = systemLanguage(enSettings, itSettings, 4) + ":";
+            lblSetTempGPU.Text = systemLanguage(enSettings, itSettings, 4) + ":";
         }
 
         private void rdbtneng_Click(object sender, EventArgs e)
@@ -366,11 +384,19 @@ namespace SystemViewer
             rdbtnPercentageHDD.Text = systemLanguage(enSettings, itSettings, 10);
             lblWarningWhenCPU.Text = "Show warning when CPU temperature is higher than:";
             lblWarningWhenGPU.Text = "Show warning when GPU temperature is higher than:";
+            lblSet.Text = systemLanguage(enSettings, itSettings, 4) + ":";
+            lblSetTempGPU.Text = systemLanguage(enSettings, itSettings, 4) + ":";
         }
 
         private void informationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Informations Informations = new Informations();
+            Informations.Show();
+            Informations.Left = this.Left;
+            Informations.Top = this.Top;
+            Informations.Size = this.Size;
             timer1.Stop();
+            this.Hide();
         }
 
         private void rdbtnita_CheckedChanged(object sender, EventArgs e)

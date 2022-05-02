@@ -34,9 +34,13 @@
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.lblMoreSettingsComing = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl0 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +75,7 @@
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(98, 25);
             this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // label15
             // 
@@ -94,37 +99,89 @@
             this.label16.Size = new System.Drawing.Size(0, 24);
             this.label16.TabIndex = 80;
             // 
-            // vScrollBar1
+            // lbl0
             // 
-            this.vScrollBar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.vScrollBar1.Location = new System.Drawing.Point(963, 29);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(28, 531);
-            this.vScrollBar1.TabIndex = 87;
+            this.lbl0.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl0.AutoSize = true;
+            this.lbl0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl0.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lbl0.Location = new System.Drawing.Point(10, 330);
+            this.lbl0.Name = "lbl0";
+            this.lbl0.Size = new System.Drawing.Size(363, 24);
+            this.lbl0.TabIndex = 101;
+            this.lbl0.Text = "More features coming in the next update...";
             // 
-            // lblMoreSettingsComing
+            // lbl1
             // 
-            this.lblMoreSettingsComing.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblMoreSettingsComing.AutoSize = true;
-            this.lblMoreSettingsComing.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoreSettingsComing.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblMoreSettingsComing.Location = new System.Drawing.Point(273, 507);
-            this.lblMoreSettingsComing.Name = "lblMoreSettingsComing";
-            this.lblMoreSettingsComing.Size = new System.Drawing.Size(363, 24);
-            this.lblMoreSettingsComing.TabIndex = 101;
-            this.lblMoreSettingsComing.Text = "More features coming in the next update...";
+            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl1.AutoSize = true;
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lbl1.Location = new System.Drawing.Point(10, 275);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(322, 24);
+            this.lbl1.TabIndex = 102;
+            this.lbl1.Text = "N/D means No data have been found";
             // 
-            // label1
+            // lbl2
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(273, 453);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 24);
-            this.label1.TabIndex = 102;
-            this.label1.Text = "N/D means No data have been found";
+            this.lbl2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lbl2.Location = new System.Drawing.Point(10, 223);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(94, 24);
+            this.lbl2.TabIndex = 103;
+            this.lbl2.Text = "GPU error";
+            // 
+            // lbl3
+            // 
+            this.lbl3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl3.AutoSize = true;
+            this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lbl3.Location = new System.Drawing.Point(10, 170);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(211, 24);
+            this.lbl3.TabIndex = 104;
+            this.lbl3.Text = "Temp and vram support";
+            // 
+            // lbl
+            // 
+            this.lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lbl.Location = new System.Drawing.Point(10, 522);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(106, 24);
+            this.lbl.TabIndex = 105;
+            this.lbl.Text = "Created by:";
+            // 
+            // lbl4
+            // 
+            this.lbl4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl4.AutoSize = true;
+            this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lbl4.Location = new System.Drawing.Point(10, 43);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(198, 29);
+            this.lbl4.TabIndex = 106;
+            this.lbl4.Text = "INFORMATIONS";
+            // 
+            // lbl5
+            // 
+            this.lbl5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl5.AutoSize = true;
+            this.lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lbl5.Location = new System.Drawing.Point(10, 97);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(111, 24);
+            this.lbl5.TabIndex = 107;
+            this.lbl5.Text = "Boost mode";
             // 
             // Informations
             // 
@@ -132,9 +189,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblMoreSettingsComing);
-            this.Controls.Add(this.vScrollBar1);
+            this.Controls.Add(this.lbl5);
+            this.Controls.Add(this.lbl4);
+            this.Controls.Add(this.lbl);
+            this.Controls.Add(this.lbl3);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.lbl1);
+            this.Controls.Add(this.lbl0);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.menuStrip1);
@@ -158,8 +219,12 @@
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.Label lblMoreSettingsComing;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl0;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Label lbl4;
+        private System.Windows.Forms.Label lbl5;
     }
 }
