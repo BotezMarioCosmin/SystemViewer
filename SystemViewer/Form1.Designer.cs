@@ -36,20 +36,22 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.Font = new System.Drawing.Font("Constantia", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SpringGreen;
-            this.label1.Location = new System.Drawing.Point(57, 50);
+            this.label1.Location = new System.Drawing.Point(0, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(340, 58);
+            this.label1.Size = new System.Drawing.Size(450, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "System Viewer";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(66, 123);
+            this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.progressBar1.Location = new System.Drawing.Point(55, 115);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(316, 23);
+            this.progressBar1.Size = new System.Drawing.Size(332, 23);
             this.progressBar1.TabIndex = 1;
             // 
             // startupTimer
@@ -71,7 +73,6 @@
             this.Text = "System Viewer";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
