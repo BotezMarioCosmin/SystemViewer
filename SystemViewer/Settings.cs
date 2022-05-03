@@ -99,6 +99,14 @@ namespace SystemViewer
             {
                 btnTheme_Click(sender, e);
             }
+            else if (FormColor == 2)
+            {
+                btnTheme2_Click(sender, e);
+            }
+            else if (FormColor == 3)
+            {
+                btnTheme3_Click(sender, e);
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -432,15 +440,159 @@ namespace SystemViewer
                 return t;
         }
 
+        private void btnTheme_Click(object sender, EventArgs e)
+        {
+            FormColor = 1;
+            Color color = Color.FromArgb(0, 200, 0);
+            this.BackColor = Color.FromArgb(34, 36, 49);
+            lblA1.ForeColor = color;
+            lblA2.ForeColor = color;
+            lblA3.ForeColor = color;
+            lblA4.ForeColor = color;
+            lblA5.ForeColor = color;
+            lblSystem.ForeColor = color;
+            lblCPU.ForeColor = color;
+            lblGPU.ForeColor = color;
+            lblRAM.ForeColor = color;
+            lblHDD.ForeColor = color;
+            lblSettings.ForeColor = color;
+            lblLanguage.ForeColor = color;
+            lblTemperature.ForeColor = color;
+            lblApptheme.ForeColor = color;
+            rdbtnita.ForeColor = color;
+            rdbtneng.ForeColor = color;
+            rdbtnCelsius.ForeColor = color;
+            rdbtnFahrenheit.ForeColor = color;
+            lblWarningWhenCPU.ForeColor = color;
+            lblWarningWhenGPU.ForeColor = color;
+            lblPieChartCPU.ForeColor = color;
+            lblSet.ForeColor = color;
+            lblSetTempGPU.ForeColor = color;
+            lblPieChartHDD.ForeColor = color;
+            lblPieChartRAM.ForeColor = color;
+            rdbtnDefaultCPU.ForeColor = color;
+            rdbtnDefaultHDD.ForeColor = color;
+            rdbtnDefaultRAM.ForeColor = color;
+            rdbtnPercentageCpu.ForeColor = color;
+            rdbtnPercentageHDD.ForeColor = color;
+            rdbtnPercentageRAM.ForeColor = color;
+            menuStrip1.BackColor = Color.FromArgb(34, 96, 79);
+        }
 
+        private void btnThemeDefault_Click(object sender, EventArgs e)
+        {
+            FormColor = 0;
+            Color color = Color.DodgerBlue;
+            this.BackColor = Color.MidnightBlue;
+            lblA1.ForeColor = color;
+            lblA2.ForeColor = color;
+            lblA3.ForeColor = color;
+            lblA4.ForeColor = color;
+            lblA5.ForeColor = color;
+            lblSystem.ForeColor = color;
+            lblCPU.ForeColor = color;
+            lblGPU.ForeColor = color;
+            lblRAM.ForeColor = color;
+            lblHDD.ForeColor = color;
+            lblSettings.ForeColor = color;
+            lblLanguage.ForeColor = color;
+            lblTemperature.ForeColor = color;
+            lblApptheme.ForeColor = color;
+            rdbtnita.ForeColor = color;
+            rdbtneng.ForeColor = color;
+            rdbtnCelsius.ForeColor = color;
+            rdbtnFahrenheit.ForeColor = color;
+            lblWarningWhenCPU.ForeColor = color;
+            lblWarningWhenGPU.ForeColor = color;
+            lblPieChartCPU.ForeColor = color;
+            lblSet.ForeColor = color;
+            lblSetTempGPU.ForeColor = color;
+            lblPieChartRAM.ForeColor = color;
+            lblPieChartHDD.ForeColor = color;
+            rdbtnDefaultCPU.ForeColor = color;
+            rdbtnDefaultHDD.ForeColor = color;
+            rdbtnDefaultRAM.ForeColor = color;
+            rdbtnPercentageCpu.ForeColor = color;
+            rdbtnPercentageHDD.ForeColor = color;
+            rdbtnPercentageRAM.ForeColor = color;
+            menuStrip1.BackColor = Color.DarkSlateBlue;
+        }
         private void btnTheme2_Click(object sender, EventArgs e)
         {
             FormColor = 2;
+            Color color = Color.FromArgb(244, 226, 198);
+            this.BackColor = Color.FromArgb(100, 50, 80);
+            lblA1.ForeColor = color;
+            lblA2.ForeColor = color;
+            lblA3.ForeColor = color;
+            lblA4.ForeColor = color;
+            lblA5.ForeColor = color;
+            lblSystem.ForeColor = color;
+            lblCPU.ForeColor = color;
+            lblGPU.ForeColor = color;
+            lblRAM.ForeColor = color;
+            lblHDD.ForeColor = color;
+            lblSettings.ForeColor = color;
+            lblLanguage.ForeColor = color;
+            lblTemperature.ForeColor = color;
+            lblApptheme.ForeColor = color;
+            rdbtnita.ForeColor = color;
+            rdbtneng.ForeColor = color;
+            rdbtnCelsius.ForeColor = color;
+            rdbtnFahrenheit.ForeColor = color;
+            lblWarningWhenCPU.ForeColor = color;
+            lblWarningWhenGPU.ForeColor = color;
+            lblPieChartCPU.ForeColor = color;
+            lblSet.ForeColor = color;
+            lblSetTempGPU.ForeColor = color;
+            lblPieChartHDD.ForeColor = color;
+            lblPieChartRAM.ForeColor = color;
+            rdbtnDefaultCPU.ForeColor = color;
+            rdbtnDefaultHDD.ForeColor = color;
+            rdbtnDefaultRAM.ForeColor = color;
+            rdbtnPercentageCpu.ForeColor = color;
+            rdbtnPercentageHDD.ForeColor = color;
+            rdbtnPercentageRAM.ForeColor = color;
+            menuStrip1.BackColor = Color.FromArgb(130, 80, 90);
         }
 
         private void btnTheme3_Click(object sender, EventArgs e)
         {
             FormColor = 3;
+            Color color = Color.FromArgb(255, 255, 255);
+            this.BackColor = Color.FromArgb(40, 40, 40);
+            lblA1.ForeColor = color;
+            lblA2.ForeColor = color;
+            lblA3.ForeColor = color;
+            lblA4.ForeColor = color;
+            lblA5.ForeColor = color;
+            lblSystem.ForeColor = color;
+            lblCPU.ForeColor = color;
+            lblGPU.ForeColor = color;
+            lblRAM.ForeColor = color;
+            lblHDD.ForeColor = color;
+            lblSettings.ForeColor = color;
+            lblLanguage.ForeColor = color;
+            lblTemperature.ForeColor = color;
+            lblApptheme.ForeColor = color;
+            rdbtnita.ForeColor = color;
+            rdbtneng.ForeColor = color;
+            rdbtnCelsius.ForeColor = color;
+            rdbtnFahrenheit.ForeColor = color;
+            lblWarningWhenCPU.ForeColor = color;
+            lblWarningWhenGPU.ForeColor = color;
+            lblPieChartCPU.ForeColor = color;
+            lblSet.ForeColor = color;
+            lblSetTempGPU.ForeColor = color;
+            lblPieChartHDD.ForeColor = color;
+            lblPieChartRAM.ForeColor = color;
+            rdbtnDefaultCPU.ForeColor = color;
+            rdbtnDefaultHDD.ForeColor = color;
+            rdbtnDefaultRAM.ForeColor = color;
+            rdbtnPercentageCpu.ForeColor = color;
+            rdbtnPercentageHDD.ForeColor = color;
+            rdbtnPercentageRAM.ForeColor = color;
+            menuStrip1.BackColor = Color.FromArgb(80, 80, 80);
         }
 
         private void rdbtnCelsius_CheckedChanged(object sender, EventArgs e)
@@ -724,83 +876,6 @@ namespace SystemViewer
                 lblSystem.ForeColor = Color.FromArgb(0, 200, 0);
             }
         }
-
-        private void btnTheme_Click(object sender, EventArgs e)
-        {
-            FormColor = 1;
-            this.BackColor = Color.FromArgb(34, 36, 49);
-            lblA1.ForeColor = Color.FromArgb(0, 200, 0);
-            lblA2.ForeColor = Color.FromArgb(0, 200, 0);
-            lblA3.ForeColor = Color.FromArgb(0, 200, 0);
-            lblA4.ForeColor = Color.FromArgb(0, 200, 0);
-            lblA5.ForeColor = Color.FromArgb(0, 200, 0);
-            lblSystem.ForeColor = Color.FromArgb(0, 200, 0);
-            lblCPU.ForeColor = Color.FromArgb(0, 200, 0);
-            lblGPU.ForeColor = Color.FromArgb(0, 200, 0);
-            lblRAM.ForeColor = Color.FromArgb(0, 200, 0);
-            lblHDD.ForeColor = Color.FromArgb(0, 200, 0);
-            lblSettings.ForeColor = Color.FromArgb(0, 200, 0);
-            lblLanguage.ForeColor = Color.FromArgb(0, 200, 0);
-            lblTemperature.ForeColor = Color.FromArgb(0, 200, 0);
-            lblApptheme.ForeColor = Color.FromArgb(0, 200, 0);
-            rdbtnita.ForeColor = Color.FromArgb(0, 200, 0);
-            rdbtneng.ForeColor = Color.FromArgb(0, 200, 0);
-            rdbtnCelsius.ForeColor = Color.FromArgb(0, 200, 0);
-            rdbtnFahrenheit.ForeColor = Color.FromArgb(0, 200, 0);
-            lblWarningWhenCPU.ForeColor = Color.FromArgb(0, 200, 0);
-            lblWarningWhenGPU.ForeColor = Color.FromArgb(0, 200, 0);
-            lblPieChartCPU.ForeColor = Color.FromArgb(0, 200, 0);
-            lblSet.ForeColor = Color.FromArgb(0, 200, 0);
-            lblSetTempGPU.ForeColor = Color.FromArgb(0, 200, 0);
-            lblPieChartHDD.ForeColor = Color.FromArgb(0, 200, 0);
-            lblPieChartRAM.ForeColor = Color.FromArgb(0, 200, 0);
-            rdbtnDefaultCPU.ForeColor = Color.FromArgb(0, 200, 0);
-            rdbtnDefaultHDD.ForeColor = Color.FromArgb(0, 200, 0);
-            rdbtnDefaultRAM.ForeColor = Color.FromArgb(0, 200, 0);
-            rdbtnPercentageCpu.ForeColor = Color.FromArgb(0, 200, 0);
-            rdbtnPercentageHDD.ForeColor = Color.FromArgb(0, 200, 0);
-            rdbtnPercentageRAM.ForeColor = Color.FromArgb(0, 200, 0);
-            menuStrip1.BackColor = Color.FromArgb(34, 96, 79);
-        }
-
-        private void btnThemeDefault_Click(object sender, EventArgs e)
-        {
-            FormColor = 0;
-            this.BackColor = Color.MidnightBlue;
-            lblA1.ForeColor = Color.DodgerBlue;
-            lblA2.ForeColor = Color.DodgerBlue;
-            lblA3.ForeColor = Color.DodgerBlue;
-            lblA4.ForeColor = Color.DodgerBlue;
-            lblA5.ForeColor = Color.DodgerBlue;
-            lblSystem.ForeColor = Color.DodgerBlue;
-            lblCPU.ForeColor = Color.DodgerBlue;
-            lblGPU.ForeColor = Color.DodgerBlue;
-            lblRAM.ForeColor = Color.DodgerBlue;
-            lblHDD.ForeColor = Color.DodgerBlue;
-            lblSettings.ForeColor = Color.DodgerBlue;
-            lblLanguage.ForeColor = Color.DodgerBlue;
-            lblTemperature.ForeColor = Color.DodgerBlue;
-            lblApptheme.ForeColor = Color.DodgerBlue;
-            rdbtnita.ForeColor = Color.DodgerBlue;
-            rdbtneng.ForeColor = Color.DodgerBlue;
-            rdbtnCelsius.ForeColor = Color.DodgerBlue;
-            rdbtnFahrenheit.ForeColor = Color.DodgerBlue;
-            lblWarningWhenCPU.ForeColor = Color.DodgerBlue;
-            lblWarningWhenGPU.ForeColor = Color.DodgerBlue;
-            lblPieChartCPU.ForeColor = Color.DodgerBlue;
-            lblSet.ForeColor = Color.DodgerBlue;
-            lblSetTempGPU.ForeColor = Color.DodgerBlue;
-            lblPieChartRAM.ForeColor = Color.DodgerBlue;
-            lblPieChartHDD.ForeColor = Color.DodgerBlue;
-            rdbtnDefaultCPU.ForeColor = Color.DodgerBlue;
-            rdbtnDefaultHDD.ForeColor = Color.DodgerBlue;
-            rdbtnDefaultRAM.ForeColor = Color.DodgerBlue;
-            rdbtnPercentageCpu.ForeColor = Color.DodgerBlue;
-            rdbtnPercentageHDD.ForeColor = Color.DodgerBlue;
-            rdbtnPercentageRAM.ForeColor = Color.DodgerBlue;
-            menuStrip1.BackColor = Color.DarkSlateBlue;
-        }
-
     }
 }
 

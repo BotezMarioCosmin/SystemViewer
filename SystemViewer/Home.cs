@@ -58,11 +58,9 @@ namespace SystemViewer
 
         static float GetGpuTemp()
         {
-            //UpdateVisitor updateVisitor = new UpdateVisitor();
             Computer myComputer = new Computer();
             myComputer.Open();
             myComputer.GPUEnabled = true;
-            //myComputer.Accept(updateVisitor);
             foreach (var hardwareItem in myComputer.Hardware)
             {
                 if (hardwareItem.HardwareType == HardwareType.GpuNvidia)
@@ -201,6 +199,64 @@ namespace SystemViewer
                 lblhddfree.ForeColor = color;
                 lblhddactivity.ForeColor = color;
             }
+            else if (Settings.FormColor == 2)
+            {
+                Color color = Color.FromArgb(244, 226, 198);
+                this.BackColor = Color.FromArgb(100, 50, 80);
+                lblSystemName.ForeColor = color;
+                lblCPU.ForeColor = color;
+                lblmodel.ForeColor = color;
+                lblbaseclock.ForeColor = color;
+                menuStrip1.BackColor = Color.FromArgb(130, 80, 90);
+                lblGPU.ForeColor = color;
+                lblgpumodel.ForeColor = color;
+                lblGpuVram.ForeColor = color;
+                lblGPUTEMP.ForeColor = color;
+                btnINFO.ForeColor = color;
+                btnINFOGPU.ForeColor = color;
+                lblRAM.ForeColor = color;
+                lbltotal.ForeColor = color;
+                lblavailable.ForeColor = color;
+                lblused.ForeColor = color;
+                btnINFORAM.ForeColor = color;
+                btnINFOHDD.ForeColor = color;
+                lblhddtotal.ForeColor = color;
+                lblusage.ForeColor = color;
+                lblHDD.ForeColor = color;
+                btnINFOHDD.ForeColor = color;
+                lblhddused.ForeColor = color;
+                lblhddfree.ForeColor = color;
+                lblhddactivity.ForeColor = color;
+            }
+            else if (Settings.FormColor == 3)
+            {
+                Color color = Color.FromArgb(255, 255, 255);
+                this.BackColor = Color.FromArgb(40, 40, 40);
+                lblSystemName.ForeColor = color;
+                lblCPU.ForeColor = color;
+                lblmodel.ForeColor = color;
+                lblbaseclock.ForeColor = color;
+                menuStrip1.BackColor = Color.FromArgb(80, 80, 80);
+                lblGPU.ForeColor = color;
+                lblgpumodel.ForeColor = color;
+                lblGpuVram.ForeColor = color;
+                lblGPUTEMP.ForeColor = color;
+                btnINFO.ForeColor = color;
+                btnINFOGPU.ForeColor = color;
+                lblRAM.ForeColor = color;
+                lbltotal.ForeColor = color;
+                lblavailable.ForeColor = color;
+                lblused.ForeColor = color;
+                btnINFORAM.ForeColor = color;
+                btnINFOHDD.ForeColor = color;
+                lblhddtotal.ForeColor = color;
+                lblusage.ForeColor = color;
+                lblHDD.ForeColor = color;
+                btnINFOHDD.ForeColor = color;
+                lblhddused.ForeColor = color;
+                lblhddfree.ForeColor = color;
+                lblhddactivity.ForeColor = color;
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -231,6 +287,14 @@ namespace SystemViewer
                 {
                     lblCPUTEMP.ForeColor = Color.DodgerBlue;
                 }
+                else if (Settings.FormColor == 2)
+                { 
+                    lblCPUTEMP.ForeColor = Color.FromArgb(244, 226, 198);
+                }
+                else if (Settings.FormColor == 3)
+                {
+                    lblCPUTEMP.ForeColor = Color.FromArgb(255, 255, 255);
+                }
             }
             crclprgrsbrCpu.Value = cpupercent;
             crclprgrsbrCpu.Text = cpupercent + "%";
@@ -256,6 +320,14 @@ namespace SystemViewer
                     {
                         lblCPUTEMP.ForeColor = Color.DodgerBlue;
                     }
+                    else if (Settings.FormColor == 2)
+                    { 
+                        lblCPUTEMP.ForeColor = Color.FromArgb(244, 226, 198);
+                    }
+                    else if (Settings.FormColor == 3)
+                    {
+                        lblCPUTEMP.ForeColor = Color.FromArgb(255, 255, 255);
+                    }
                 }
             }
             else
@@ -276,7 +348,14 @@ namespace SystemViewer
                     {
                         lblCPUTEMP.ForeColor = Color.DodgerBlue;
                     }
-
+                    else if (Settings.FormColor == 2)
+                    {
+                        lblCPUTEMP.ForeColor = Color.FromArgb(244, 226, 198);
+                    }
+                    else if (Settings.FormColor == 3)
+                    {
+                        lblCPUTEMP.ForeColor = Color.FromArgb(255, 255, 255);
+                    }
                 }
             }
 
@@ -317,6 +396,14 @@ namespace SystemViewer
                 else if (Settings.FormColor == 1)
                 {
                     lblhddactivity.ForeColor = Color.FromArgb(0, 200, 0);
+                }
+                else if (Settings.FormColor == 2)
+                {
+                    lblhddactivity.ForeColor = Color.FromArgb(244, 226, 198);
+                }
+                else if (Settings.FormColor == 3)
+                {
+                    lblhddactivity.ForeColor = Color.FromArgb(255, 255, 255);
                 }
                 helpHddActivity.Hide();
             }
@@ -371,7 +458,16 @@ namespace SystemViewer
                             lblGPUTEMP.ForeColor = Color.FromArgb(0,200,0);
                             helpGpuTemp.Hide();
                         }
-
+                        else if (Settings.FormColor == 2)
+                        {
+                            lblGPUTEMP.ForeColor = Color.FromArgb(244, 226, 198);
+                            helpGpuTemp.Hide();
+                        }
+                        else if (Settings.FormColor == 3)
+                        {
+                            lblGPUTEMP.ForeColor = Color.FromArgb(255, 255, 255);
+                            helpGpuTemp.Hide();
+                        }
                     }
                 }
                 else
@@ -383,9 +479,24 @@ namespace SystemViewer
                         lblGPUTEMP.ForeColor = Color.Red;
                         helpGpuTemp.Show();
                     }
-                    else
+                    else if (Settings.FormColor == 0)
                     {
                         lblGPUTEMP.ForeColor = Color.DodgerBlue;
+                        helpGpuTemp.Hide();
+                    }
+                    else if (Settings.FormColor == 1)
+                    {
+                        lblGPUTEMP.ForeColor = Color.FromArgb(0, 200, 0);
+                        helpGpuTemp.Hide();
+                    }
+                    else if (Settings.FormColor == 2)
+                    {
+                        lblGPUTEMP.ForeColor = Color.FromArgb(244, 226, 198);
+                        helpGpuTemp.Hide();
+                    }
+                    else if (Settings.FormColor == 3)
+                    {
+                        lblGPUTEMP.ForeColor = Color.FromArgb(255, 255, 255);
                         helpGpuTemp.Hide();
                     }
 
@@ -410,12 +521,6 @@ namespace SystemViewer
                 forminf = true;
                 gpuErrorMessage = ex.Message;
                 lblGpuVram.Text = "VRAM: N/D";
-            }
-
-            //tema app
-            if (Settings.FormColor == 0)
-            { 
-            
             }
 
         }

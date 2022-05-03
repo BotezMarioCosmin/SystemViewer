@@ -110,8 +110,8 @@
             this.informationsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1312, 36);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(984, 29);
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -120,7 +120,7 @@
             this.homeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.homeToolStripMenuItem.Image = global::SystemViewer.Properties.Resources.home;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(99, 32);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(84, 25);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
@@ -129,7 +129,7 @@
             this.informationsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.informationsToolStripMenuItem.Image = global::SystemViewer.Properties.Resources.info;
             this.informationsToolStripMenuItem.Name = "informationsToolStripMenuItem";
-            this.informationsToolStripMenuItem.Size = new System.Drawing.Size(157, 32);
+            this.informationsToolStripMenuItem.Size = new System.Drawing.Size(131, 25);
             this.informationsToolStripMenuItem.Text = "Informations";
             this.informationsToolStripMenuItem.Click += new System.EventHandler(this.informationsToolStripMenuItem_Click);
             // 
@@ -147,10 +147,10 @@
             this.panel1.Controls.Add(this.lblGPU);
             this.panel1.Controls.Add(this.lblSystem);
             this.panel1.Controls.Add(this.lblCPU);
-            this.panel1.Location = new System.Drawing.Point(12, 114);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(9, 93);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(158, 252);
+            this.panel1.Size = new System.Drawing.Size(119, 205);
             this.panel1.TabIndex = 59;
             // 
             // lblA5
@@ -158,10 +158,9 @@
             this.lblA5.AutoSize = true;
             this.lblA5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblA5.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblA5.Location = new System.Drawing.Point(131, 194);
-            this.lblA5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblA5.Location = new System.Drawing.Point(98, 158);
             this.lblA5.Name = "lblA5";
-            this.lblA5.Size = new System.Drawing.Size(27, 29);
+            this.lblA5.Size = new System.Drawing.Size(21, 24);
             this.lblA5.TabIndex = 105;
             this.lblA5.Text = ">";
             // 
@@ -170,10 +169,9 @@
             this.lblA4.AutoSize = true;
             this.lblA4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblA4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblA4.Location = new System.Drawing.Point(131, 150);
-            this.lblA4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblA4.Location = new System.Drawing.Point(98, 122);
             this.lblA4.Name = "lblA4";
-            this.lblA4.Size = new System.Drawing.Size(27, 29);
+            this.lblA4.Size = new System.Drawing.Size(21, 24);
             this.lblA4.TabIndex = 104;
             this.lblA4.Text = ">";
             // 
@@ -182,10 +180,9 @@
             this.lblA3.AutoSize = true;
             this.lblA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblA3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblA3.Location = new System.Drawing.Point(131, 103);
-            this.lblA3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblA3.Location = new System.Drawing.Point(98, 84);
             this.lblA3.Name = "lblA3";
-            this.lblA3.Size = new System.Drawing.Size(27, 29);
+            this.lblA3.Size = new System.Drawing.Size(21, 24);
             this.lblA3.TabIndex = 103;
             this.lblA3.Text = ">";
             // 
@@ -194,10 +191,9 @@
             this.lblA2.AutoSize = true;
             this.lblA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblA2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblA2.Location = new System.Drawing.Point(131, 60);
-            this.lblA2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblA2.Location = new System.Drawing.Point(98, 49);
             this.lblA2.Name = "lblA2";
-            this.lblA2.Size = new System.Drawing.Size(27, 29);
+            this.lblA2.Size = new System.Drawing.Size(21, 24);
             this.lblA2.TabIndex = 102;
             this.lblA2.Text = ">";
             // 
@@ -206,10 +202,9 @@
             this.lblA1.AutoSize = true;
             this.lblA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblA1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblA1.Location = new System.Drawing.Point(131, 17);
-            this.lblA1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblA1.Location = new System.Drawing.Point(98, 14);
             this.lblA1.Name = "lblA1";
-            this.lblA1.Size = new System.Drawing.Size(27, 29);
+            this.lblA1.Size = new System.Drawing.Size(21, 24);
             this.lblA1.TabIndex = 101;
             this.lblA1.Text = ">";
             // 
@@ -218,10 +213,9 @@
             this.lblHDD.AutoSize = true;
             this.lblHDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHDD.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblHDD.Location = new System.Drawing.Point(19, 194);
-            this.lblHDD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHDD.Location = new System.Drawing.Point(14, 158);
             this.lblHDD.Name = "lblHDD";
-            this.lblHDD.Size = new System.Drawing.Size(64, 29);
+            this.lblHDD.Size = new System.Drawing.Size(50, 24);
             this.lblHDD.TabIndex = 91;
             this.lblHDD.Text = "HDD";
             this.lblHDD.Click += new System.EventHandler(this.lblHDD_Click);
@@ -233,10 +227,9 @@
             this.lblRAM.AutoSize = true;
             this.lblRAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRAM.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblRAM.Location = new System.Drawing.Point(19, 150);
-            this.lblRAM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRAM.Location = new System.Drawing.Point(14, 122);
             this.lblRAM.Name = "lblRAM";
-            this.lblRAM.Size = new System.Drawing.Size(65, 29);
+            this.lblRAM.Size = new System.Drawing.Size(52, 24);
             this.lblRAM.TabIndex = 90;
             this.lblRAM.Text = "RAM";
             this.lblRAM.Click += new System.EventHandler(this.lblRAM_Click);
@@ -248,10 +241,9 @@
             this.lblGPU.AutoSize = true;
             this.lblGPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGPU.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblGPU.Location = new System.Drawing.Point(19, 105);
-            this.lblGPU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGPU.Location = new System.Drawing.Point(14, 85);
             this.lblGPU.Name = "lblGPU";
-            this.lblGPU.Size = new System.Drawing.Size(64, 29);
+            this.lblGPU.Size = new System.Drawing.Size(49, 24);
             this.lblGPU.TabIndex = 89;
             this.lblGPU.Text = "GPU";
             this.lblGPU.Click += new System.EventHandler(this.lblGPU_Click);
@@ -263,10 +255,9 @@
             this.lblSystem.AutoSize = true;
             this.lblSystem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSystem.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblSystem.Location = new System.Drawing.Point(19, 15);
-            this.lblSystem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSystem.Location = new System.Drawing.Point(14, 12);
             this.lblSystem.Name = "lblSystem";
-            this.lblSystem.Size = new System.Drawing.Size(92, 29);
+            this.lblSystem.Size = new System.Drawing.Size(71, 24);
             this.lblSystem.TabIndex = 1;
             this.lblSystem.Text = "System";
             this.lblSystem.Click += new System.EventHandler(this.lblSystem_Click);
@@ -278,10 +269,9 @@
             this.lblCPU.AutoSize = true;
             this.lblCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCPU.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblCPU.Location = new System.Drawing.Point(19, 60);
-            this.lblCPU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCPU.Location = new System.Drawing.Point(14, 49);
             this.lblCPU.Name = "lblCPU";
-            this.lblCPU.Size = new System.Drawing.Size(63, 29);
+            this.lblCPU.Size = new System.Drawing.Size(48, 24);
             this.lblCPU.TabIndex = 0;
             this.lblCPU.Text = "CPU";
             this.lblCPU.Click += new System.EventHandler(this.lblCPU_Click);
@@ -294,10 +284,9 @@
             this.lblSettings.AutoSize = true;
             this.lblSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSettings.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblSettings.Location = new System.Drawing.Point(13, 55);
-            this.lblSettings.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSettings.Location = new System.Drawing.Point(10, 45);
             this.lblSettings.Name = "lblSettings";
-            this.lblSettings.Size = new System.Drawing.Size(164, 36);
+            this.lblSettings.Size = new System.Drawing.Size(135, 29);
             this.lblSettings.TabIndex = 60;
             this.lblSettings.Text = "SETTINGS";
             // 
@@ -311,19 +300,17 @@
             this.panelCPU.Controls.Add(this.lblWarningWhenCPU);
             this.panelCPU.Controls.Add(this.button1);
             this.panelCPU.Controls.Add(this.textBoxCPU);
-            this.panelCPU.Location = new System.Drawing.Point(283, 111);
-            this.panelCPU.Margin = new System.Windows.Forms.Padding(4);
+            this.panelCPU.Location = new System.Drawing.Point(212, 90);
             this.panelCPU.Name = "panelCPU";
-            this.panelCPU.Size = new System.Drawing.Size(983, 586);
+            this.panelCPU.Size = new System.Drawing.Size(737, 476);
             this.panelCPU.TabIndex = 87;
             // 
             // textBoxTempCpu
             // 
             this.textBoxTempCpu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTempCpu.Location = new System.Drawing.Point(104, 78);
-            this.textBoxTempCpu.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTempCpu.Location = new System.Drawing.Point(78, 63);
             this.textBoxTempCpu.Name = "textBoxTempCpu";
-            this.textBoxTempCpu.Size = new System.Drawing.Size(91, 30);
+            this.textBoxTempCpu.Size = new System.Drawing.Size(69, 26);
             this.textBoxTempCpu.TabIndex = 95;
             this.textBoxTempCpu.Text = "70 °C";
             // 
@@ -331,10 +318,10 @@
             // 
             this.panel4.Controls.Add(this.rdbtnPercentageCpu);
             this.panel4.Controls.Add(this.rdbtnDefaultCPU);
-            this.panel4.Location = new System.Drawing.Point(8, 165);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Location = new System.Drawing.Point(6, 134);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 69);
+            this.panel4.Size = new System.Drawing.Size(150, 56);
             this.panel4.TabIndex = 94;
             // 
             // rdbtnPercentageCpu
@@ -342,10 +329,10 @@
             this.rdbtnPercentageCpu.AutoSize = true;
             this.rdbtnPercentageCpu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtnPercentageCpu.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.rdbtnPercentageCpu.Location = new System.Drawing.Point(9, 32);
-            this.rdbtnPercentageCpu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbtnPercentageCpu.Location = new System.Drawing.Point(7, 26);
+            this.rdbtnPercentageCpu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbtnPercentageCpu.Name = "rdbtnPercentageCpu";
-            this.rdbtnPercentageCpu.Size = new System.Drawing.Size(133, 29);
+            this.rdbtnPercentageCpu.Size = new System.Drawing.Size(109, 24);
             this.rdbtnPercentageCpu.TabIndex = 1;
             this.rdbtnPercentageCpu.TabStop = true;
             this.rdbtnPercentageCpu.Text = "Percentage";
@@ -358,10 +345,10 @@
             this.rdbtnDefaultCPU.Checked = true;
             this.rdbtnDefaultCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtnDefaultCPU.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.rdbtnDefaultCPU.Location = new System.Drawing.Point(9, 5);
-            this.rdbtnDefaultCPU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbtnDefaultCPU.Location = new System.Drawing.Point(7, 4);
+            this.rdbtnDefaultCPU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbtnDefaultCPU.Name = "rdbtnDefaultCPU";
-            this.rdbtnDefaultCPU.Size = new System.Drawing.Size(94, 29);
+            this.rdbtnDefaultCPU.Size = new System.Drawing.Size(79, 24);
             this.rdbtnDefaultCPU.TabIndex = 0;
             this.rdbtnDefaultCPU.TabStop = true;
             this.rdbtnDefaultCPU.Text = "Default";
@@ -372,10 +359,9 @@
             this.lblPieChartCPU.AutoSize = true;
             this.lblPieChartCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPieChartCPU.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblPieChartCPU.Location = new System.Drawing.Point(3, 127);
-            this.lblPieChartCPU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPieChartCPU.Location = new System.Drawing.Point(2, 103);
             this.lblPieChartCPU.Name = "lblPieChartCPU";
-            this.lblPieChartCPU.Size = new System.Drawing.Size(141, 25);
+            this.lblPieChartCPU.Size = new System.Drawing.Size(113, 20);
             this.lblPieChartCPU.TabIndex = 92;
             this.lblPieChartCPU.Text = "Pie chart color:";
             // 
@@ -384,10 +370,9 @@
             this.lblSet.AutoSize = true;
             this.lblSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSet.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblSet.Location = new System.Drawing.Point(3, 81);
-            this.lblSet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSet.Location = new System.Drawing.Point(2, 66);
             this.lblSet.Name = "lblSet";
-            this.lblSet.Size = new System.Drawing.Size(48, 25);
+            this.lblSet.Size = new System.Drawing.Size(38, 20);
             this.lblSet.TabIndex = 91;
             this.lblSet.Text = "Set:";
             // 
@@ -396,19 +381,17 @@
             this.lblWarningWhenCPU.AutoSize = true;
             this.lblWarningWhenCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWarningWhenCPU.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblWarningWhenCPU.Location = new System.Drawing.Point(3, 4);
-            this.lblWarningWhenCPU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblWarningWhenCPU.Location = new System.Drawing.Point(2, 3);
             this.lblWarningWhenCPU.Name = "lblWarningWhenCPU";
-            this.lblWarningWhenCPU.Size = new System.Drawing.Size(470, 25);
+            this.lblWarningWhenCPU.Size = new System.Drawing.Size(381, 20);
             this.lblWarningWhenCPU.TabIndex = 88;
             this.lblWarningWhenCPU.Text = "Show warning when CPU temperature is higher than:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(151, 39);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(113, 32);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 30);
+            this.button1.Size = new System.Drawing.Size(33, 24);
             this.button1.TabIndex = 90;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
@@ -417,10 +400,9 @@
             // textBoxCPU
             // 
             this.textBoxCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCPU.Location = new System.Drawing.Point(8, 36);
-            this.textBoxCPU.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCPU.Location = new System.Drawing.Point(6, 29);
             this.textBoxCPU.Name = "textBoxCPU";
-            this.textBoxCPU.Size = new System.Drawing.Size(132, 30);
+            this.textBoxCPU.Size = new System.Drawing.Size(100, 26);
             this.textBoxCPU.TabIndex = 89;
             // 
             // panelSystem
@@ -435,19 +417,17 @@
             this.panelSystem.Controls.Add(this.panel3);
             this.panelSystem.Controls.Add(this.panel2);
             this.panelSystem.Controls.Add(this.lblLanguage);
-            this.panelSystem.Location = new System.Drawing.Point(343, 81);
-            this.panelSystem.Margin = new System.Windows.Forms.Padding(4);
+            this.panelSystem.Location = new System.Drawing.Point(257, 66);
             this.panelSystem.Name = "panelSystem";
-            this.panelSystem.Size = new System.Drawing.Size(969, 586);
+            this.panelSystem.Size = new System.Drawing.Size(727, 476);
             this.panelSystem.TabIndex = 88;
             this.panelSystem.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSystem_Paint);
             // 
             // btnThemeDefault
             // 
-            this.btnThemeDefault.Location = new System.Drawing.Point(131, 206);
-            this.btnThemeDefault.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThemeDefault.Location = new System.Drawing.Point(98, 167);
             this.btnThemeDefault.Name = "btnThemeDefault";
-            this.btnThemeDefault.Size = new System.Drawing.Size(100, 28);
+            this.btnThemeDefault.Size = new System.Drawing.Size(75, 23);
             this.btnThemeDefault.TabIndex = 105;
             this.btnThemeDefault.Text = "Default";
             this.btnThemeDefault.UseVisualStyleBackColor = true;
@@ -455,10 +435,9 @@
             // 
             // btnTheme3
             // 
-            this.btnTheme3.Location = new System.Drawing.Point(455, 206);
-            this.btnTheme3.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTheme3.Location = new System.Drawing.Point(341, 167);
             this.btnTheme3.Name = "btnTheme3";
-            this.btnTheme3.Size = new System.Drawing.Size(100, 28);
+            this.btnTheme3.Size = new System.Drawing.Size(75, 23);
             this.btnTheme3.TabIndex = 104;
             this.btnTheme3.Text = "Theme 3";
             this.btnTheme3.UseVisualStyleBackColor = true;
@@ -466,10 +445,9 @@
             // 
             // btnTheme2
             // 
-            this.btnTheme2.Location = new System.Drawing.Point(347, 206);
-            this.btnTheme2.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTheme2.Location = new System.Drawing.Point(260, 167);
             this.btnTheme2.Name = "btnTheme2";
-            this.btnTheme2.Size = new System.Drawing.Size(100, 28);
+            this.btnTheme2.Size = new System.Drawing.Size(75, 23);
             this.btnTheme2.TabIndex = 103;
             this.btnTheme2.Text = "Theme 2";
             this.btnTheme2.UseVisualStyleBackColor = true;
@@ -477,10 +455,9 @@
             // 
             // btnTheme1
             // 
-            this.btnTheme1.Location = new System.Drawing.Point(239, 206);
-            this.btnTheme1.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTheme1.Location = new System.Drawing.Point(179, 167);
             this.btnTheme1.Name = "btnTheme1";
-            this.btnTheme1.Size = new System.Drawing.Size(100, 28);
+            this.btnTheme1.Size = new System.Drawing.Size(75, 23);
             this.btnTheme1.TabIndex = 102;
             this.btnTheme1.Text = "Theme 1";
             this.btnTheme1.UseVisualStyleBackColor = true;
@@ -491,10 +468,9 @@
             this.lblApptheme.AutoSize = true;
             this.lblApptheme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApptheme.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblApptheme.Location = new System.Drawing.Point(1, 206);
-            this.lblApptheme.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblApptheme.Location = new System.Drawing.Point(1, 167);
             this.lblApptheme.Name = "lblApptheme";
-            this.lblApptheme.Size = new System.Drawing.Size(113, 25);
+            this.lblApptheme.Size = new System.Drawing.Size(91, 20);
             this.lblApptheme.TabIndex = 101;
             this.lblApptheme.Text = "App theme:";
             // 
@@ -503,10 +479,9 @@
             this.lblTemperature.AutoSize = true;
             this.lblTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTemperature.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblTemperature.Location = new System.Drawing.Point(1, 97);
-            this.lblTemperature.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTemperature.Location = new System.Drawing.Point(1, 79);
             this.lblTemperature.Name = "lblTemperature";
-            this.lblTemperature.Size = new System.Drawing.Size(130, 25);
+            this.lblTemperature.Size = new System.Drawing.Size(104, 20);
             this.lblTemperature.TabIndex = 99;
             this.lblTemperature.Text = "Temperature:";
             // 
@@ -516,19 +491,19 @@
             this.panel3.Controls.Add(this.rdbtnFahrenheit);
             this.panel3.Controls.Add(this.rdbtnCelsius);
             this.panel3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.panel3.Location = new System.Drawing.Point(147, 97);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(110, 79);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(135, 62);
+            this.panel3.Size = new System.Drawing.Size(101, 50);
             this.panel3.TabIndex = 97;
             // 
             // rdbtnFahrenheit
             // 
             this.rdbtnFahrenheit.AutoSize = true;
-            this.rdbtnFahrenheit.Location = new System.Drawing.Point(3, 31);
-            this.rdbtnFahrenheit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbtnFahrenheit.Location = new System.Drawing.Point(2, 25);
+            this.rdbtnFahrenheit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbtnFahrenheit.Name = "rdbtnFahrenheit";
-            this.rdbtnFahrenheit.Size = new System.Drawing.Size(109, 20);
+            this.rdbtnFahrenheit.Size = new System.Drawing.Size(90, 17);
             this.rdbtnFahrenheit.TabIndex = 1;
             this.rdbtnFahrenheit.Text = "Fahrenheit - F";
             this.rdbtnFahrenheit.UseVisualStyleBackColor = true;
@@ -538,10 +513,10 @@
             // 
             this.rdbtnCelsius.AutoSize = true;
             this.rdbtnCelsius.Checked = true;
-            this.rdbtnCelsius.Location = new System.Drawing.Point(3, 4);
-            this.rdbtnCelsius.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbtnCelsius.Location = new System.Drawing.Point(2, 3);
+            this.rdbtnCelsius.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbtnCelsius.Name = "rdbtnCelsius";
-            this.rdbtnCelsius.Size = new System.Drawing.Size(91, 20);
+            this.rdbtnCelsius.Size = new System.Drawing.Size(74, 17);
             this.rdbtnCelsius.TabIndex = 0;
             this.rdbtnCelsius.TabStop = true;
             this.rdbtnCelsius.Text = "Celsius - C";
@@ -554,19 +529,19 @@
             this.panel2.Controls.Add(this.rdbtnita);
             this.panel2.Controls.Add(this.rdbtneng);
             this.panel2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.panel2.Location = new System.Drawing.Point(121, 1);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(91, 1);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(119, 59);
+            this.panel2.Size = new System.Drawing.Size(89, 48);
             this.panel2.TabIndex = 96;
             // 
             // rdbtnita
             // 
             this.rdbtnita.AutoSize = true;
-            this.rdbtnita.Location = new System.Drawing.Point(4, 31);
-            this.rdbtnita.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbtnita.Location = new System.Drawing.Point(3, 25);
+            this.rdbtnita.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbtnita.Name = "rdbtnita";
-            this.rdbtnita.Size = new System.Drawing.Size(71, 20);
+            this.rdbtnita.Size = new System.Drawing.Size(59, 17);
             this.rdbtnita.TabIndex = 47;
             this.rdbtnita.TabStop = true;
             this.rdbtnita.Text = "Italiano";
@@ -578,10 +553,10 @@
             // 
             this.rdbtneng.AutoSize = true;
             this.rdbtneng.Checked = true;
-            this.rdbtneng.Location = new System.Drawing.Point(4, 6);
-            this.rdbtneng.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbtneng.Location = new System.Drawing.Point(3, 5);
+            this.rdbtneng.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbtneng.Name = "rdbtneng";
-            this.rdbtneng.Size = new System.Drawing.Size(72, 20);
+            this.rdbtneng.Size = new System.Drawing.Size(59, 17);
             this.rdbtneng.TabIndex = 46;
             this.rdbtneng.TabStop = true;
             this.rdbtneng.Text = "English";
@@ -594,9 +569,8 @@
             this.lblLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLanguage.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblLanguage.Location = new System.Drawing.Point(1, 1);
-            this.lblLanguage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLanguage.Name = "lblLanguage";
-            this.lblLanguage.Size = new System.Drawing.Size(106, 25);
+            this.lblLanguage.Size = new System.Drawing.Size(85, 20);
             this.lblLanguage.TabIndex = 95;
             this.lblLanguage.Text = "Language:";
             // 
@@ -613,19 +587,17 @@
             this.panelGPU.Controls.Add(this.lblWarningWhenGPU);
             this.panelGPU.Controls.Add(this.button2);
             this.panelGPU.Controls.Add(this.textBoxGPU);
-            this.panelGPU.Location = new System.Drawing.Point(225, 144);
-            this.panelGPU.Margin = new System.Windows.Forms.Padding(4);
+            this.panelGPU.Location = new System.Drawing.Point(169, 117);
             this.panelGPU.Name = "panelGPU";
-            this.panelGPU.Size = new System.Drawing.Size(983, 586);
+            this.panelGPU.Size = new System.Drawing.Size(737, 476);
             this.panelGPU.TabIndex = 99;
             // 
             // textBoxTempGpu
             // 
             this.textBoxTempGpu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTempGpu.Location = new System.Drawing.Point(105, 79);
-            this.textBoxTempGpu.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTempGpu.Location = new System.Drawing.Point(79, 64);
             this.textBoxTempGpu.Name = "textBoxTempGpu";
-            this.textBoxTempGpu.Size = new System.Drawing.Size(91, 30);
+            this.textBoxTempGpu.Size = new System.Drawing.Size(69, 26);
             this.textBoxTempGpu.TabIndex = 96;
             this.textBoxTempGpu.Text = "70 °C";
             // 
@@ -634,10 +606,9 @@
             this.lblSetTempGPU.AutoSize = true;
             this.lblSetTempGPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSetTempGPU.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblSetTempGPU.Location = new System.Drawing.Point(4, 82);
-            this.lblSetTempGPU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSetTempGPU.Location = new System.Drawing.Point(3, 67);
             this.lblSetTempGPU.Name = "lblSetTempGPU";
-            this.lblSetTempGPU.Size = new System.Drawing.Size(48, 25);
+            this.lblSetTempGPU.Size = new System.Drawing.Size(38, 20);
             this.lblSetTempGPU.TabIndex = 91;
             this.lblSetTempGPU.Text = "Set:";
             // 
@@ -646,19 +617,17 @@
             this.lblWarningWhenGPU.AutoSize = true;
             this.lblWarningWhenGPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWarningWhenGPU.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblWarningWhenGPU.Location = new System.Drawing.Point(4, 5);
-            this.lblWarningWhenGPU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblWarningWhenGPU.Location = new System.Drawing.Point(3, 4);
             this.lblWarningWhenGPU.Name = "lblWarningWhenGPU";
-            this.lblWarningWhenGPU.Size = new System.Drawing.Size(470, 25);
+            this.lblWarningWhenGPU.Size = new System.Drawing.Size(383, 20);
             this.lblWarningWhenGPU.TabIndex = 88;
             this.lblWarningWhenGPU.Text = "Show warning when GPU temperature is higher than:";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(152, 39);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(114, 32);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(44, 30);
+            this.button2.Size = new System.Drawing.Size(33, 24);
             this.button2.TabIndex = 90;
             this.button2.Text = "OK";
             this.button2.UseVisualStyleBackColor = true;
@@ -667,10 +636,9 @@
             // textBoxGPU
             // 
             this.textBoxGPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGPU.Location = new System.Drawing.Point(9, 37);
-            this.textBoxGPU.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGPU.Location = new System.Drawing.Point(7, 30);
             this.textBoxGPU.Name = "textBoxGPU";
-            this.textBoxGPU.Size = new System.Drawing.Size(132, 30);
+            this.textBoxGPU.Size = new System.Drawing.Size(100, 26);
             this.textBoxGPU.TabIndex = 89;
             // 
             // panelRAM
@@ -678,20 +646,19 @@
             this.panelRAM.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelRAM.Controls.Add(this.panel7);
             this.panelRAM.Controls.Add(this.lblPieChartRAM);
-            this.panelRAM.Location = new System.Drawing.Point(211, 162);
-            this.panelRAM.Margin = new System.Windows.Forms.Padding(4);
+            this.panelRAM.Location = new System.Drawing.Point(158, 132);
             this.panelRAM.Name = "panelRAM";
-            this.panelRAM.Size = new System.Drawing.Size(983, 586);
+            this.panelRAM.Size = new System.Drawing.Size(737, 476);
             this.panelRAM.TabIndex = 100;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.rdbtnPercentageRAM);
             this.panel7.Controls.Add(this.rdbtnDefaultRAM);
-            this.panel7.Location = new System.Drawing.Point(5, 41);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel7.Location = new System.Drawing.Point(4, 33);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 66);
+            this.panel7.Size = new System.Drawing.Size(150, 54);
             this.panel7.TabIndex = 94;
             // 
             // rdbtnPercentageRAM
@@ -699,10 +666,10 @@
             this.rdbtnPercentageRAM.AutoSize = true;
             this.rdbtnPercentageRAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtnPercentageRAM.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.rdbtnPercentageRAM.Location = new System.Drawing.Point(9, 32);
-            this.rdbtnPercentageRAM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbtnPercentageRAM.Location = new System.Drawing.Point(7, 26);
+            this.rdbtnPercentageRAM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbtnPercentageRAM.Name = "rdbtnPercentageRAM";
-            this.rdbtnPercentageRAM.Size = new System.Drawing.Size(133, 29);
+            this.rdbtnPercentageRAM.Size = new System.Drawing.Size(109, 24);
             this.rdbtnPercentageRAM.TabIndex = 1;
             this.rdbtnPercentageRAM.TabStop = true;
             this.rdbtnPercentageRAM.Text = "Percentage";
@@ -714,10 +681,10 @@
             this.rdbtnDefaultRAM.Checked = true;
             this.rdbtnDefaultRAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtnDefaultRAM.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.rdbtnDefaultRAM.Location = new System.Drawing.Point(9, 5);
-            this.rdbtnDefaultRAM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbtnDefaultRAM.Location = new System.Drawing.Point(7, 4);
+            this.rdbtnDefaultRAM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbtnDefaultRAM.Name = "rdbtnDefaultRAM";
-            this.rdbtnDefaultRAM.Size = new System.Drawing.Size(94, 29);
+            this.rdbtnDefaultRAM.Size = new System.Drawing.Size(79, 24);
             this.rdbtnDefaultRAM.TabIndex = 0;
             this.rdbtnDefaultRAM.TabStop = true;
             this.rdbtnDefaultRAM.Text = "Default";
@@ -729,9 +696,8 @@
             this.lblPieChartRAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPieChartRAM.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblPieChartRAM.Location = new System.Drawing.Point(1, 2);
-            this.lblPieChartRAM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPieChartRAM.Name = "lblPieChartRAM";
-            this.lblPieChartRAM.Size = new System.Drawing.Size(141, 25);
+            this.lblPieChartRAM.Size = new System.Drawing.Size(113, 20);
             this.lblPieChartRAM.TabIndex = 92;
             this.lblPieChartRAM.Text = "Pie chart color:";
             // 
@@ -740,20 +706,19 @@
             this.panelHDD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelHDD.Controls.Add(this.panel8);
             this.panelHDD.Controls.Add(this.lblPieChartHDD);
-            this.panelHDD.Location = new System.Drawing.Point(191, 177);
-            this.panelHDD.Margin = new System.Windows.Forms.Padding(4);
+            this.panelHDD.Location = new System.Drawing.Point(143, 144);
             this.panelHDD.Name = "panelHDD";
-            this.panelHDD.Size = new System.Drawing.Size(983, 586);
+            this.panelHDD.Size = new System.Drawing.Size(737, 476);
             this.panelHDD.TabIndex = 100;
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.rdbtnPercentageHDD);
             this.panel8.Controls.Add(this.rdbtnDefaultHDD);
-            this.panel8.Location = new System.Drawing.Point(9, 42);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel8.Location = new System.Drawing.Point(7, 34);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(200, 65);
+            this.panel8.Size = new System.Drawing.Size(150, 53);
             this.panel8.TabIndex = 94;
             // 
             // rdbtnPercentageHDD
@@ -761,10 +726,10 @@
             this.rdbtnPercentageHDD.AutoSize = true;
             this.rdbtnPercentageHDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtnPercentageHDD.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.rdbtnPercentageHDD.Location = new System.Drawing.Point(9, 32);
-            this.rdbtnPercentageHDD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbtnPercentageHDD.Location = new System.Drawing.Point(7, 26);
+            this.rdbtnPercentageHDD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbtnPercentageHDD.Name = "rdbtnPercentageHDD";
-            this.rdbtnPercentageHDD.Size = new System.Drawing.Size(133, 29);
+            this.rdbtnPercentageHDD.Size = new System.Drawing.Size(109, 24);
             this.rdbtnPercentageHDD.TabIndex = 1;
             this.rdbtnPercentageHDD.TabStop = true;
             this.rdbtnPercentageHDD.Text = "Percentage";
@@ -776,10 +741,10 @@
             this.rdbtnDefaultHDD.Checked = true;
             this.rdbtnDefaultHDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtnDefaultHDD.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.rdbtnDefaultHDD.Location = new System.Drawing.Point(9, 5);
-            this.rdbtnDefaultHDD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdbtnDefaultHDD.Location = new System.Drawing.Point(7, 4);
+            this.rdbtnDefaultHDD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdbtnDefaultHDD.Name = "rdbtnDefaultHDD";
-            this.rdbtnDefaultHDD.Size = new System.Drawing.Size(94, 29);
+            this.rdbtnDefaultHDD.Size = new System.Drawing.Size(79, 24);
             this.rdbtnDefaultHDD.TabIndex = 0;
             this.rdbtnDefaultHDD.TabStop = true;
             this.rdbtnDefaultHDD.Text = "Default";
@@ -790,19 +755,19 @@
             this.lblPieChartHDD.AutoSize = true;
             this.lblPieChartHDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPieChartHDD.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblPieChartHDD.Location = new System.Drawing.Point(4, 4);
-            this.lblPieChartHDD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPieChartHDD.Location = new System.Drawing.Point(3, 3);
             this.lblPieChartHDD.Name = "lblPieChartHDD";
-            this.lblPieChartHDD.Size = new System.Drawing.Size(141, 25);
+            this.lblPieChartHDD.Size = new System.Drawing.Size(113, 20);
             this.lblPieChartHDD.TabIndex = 92;
             this.lblPieChartHDD.Text = "Pie chart color:";
             // 
             // Settings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.ClientSize = new System.Drawing.Size(1312, 690);
+            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.panelSystem);
             this.Controls.Add(this.panelGPU);
             this.Controls.Add(this.panelCPU);
             this.Controls.Add(this.panelRAM);
@@ -810,9 +775,8 @@
             this.Controls.Add(this.lblSettings);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.panelSystem);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Settings";
             this.Text = "System Viewer > Settings";
             this.Load += new System.EventHandler(this.Settings_Load);
