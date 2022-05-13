@@ -86,6 +86,7 @@
             this.rdbtnPercentageHDD = new System.Windows.Forms.RadioButton();
             this.rdbtnDefaultHDD = new System.Windows.Forms.RadioButton();
             this.lblPieChartHDD = new System.Windows.Forms.Label();
+            this.btnNoGPU = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelCPU.SuspendLayout();
@@ -609,6 +610,7 @@
             // 
             this.panelGPU.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelGPU.Controls.Add(this.textBoxTempGpu);
+            this.panelGPU.Controls.Add(this.btnNoGPU);
             this.panelGPU.Controls.Add(this.lblSetTempGPU);
             this.panelGPU.Controls.Add(this.lblWarningWhenGPU);
             this.panelGPU.Controls.Add(this.button2);
@@ -797,6 +799,16 @@
             this.lblPieChartHDD.TabIndex = 92;
             this.lblPieChartHDD.Text = "Pie chart color:";
             // 
+            // btnNoGPU
+            // 
+            this.btnNoGPU.BackColor = System.Drawing.Color.Transparent;
+            this.btnNoGPU.Location = new System.Drawing.Point(209, 34);
+            this.btnNoGPU.Name = "btnNoGPU";
+            this.btnNoGPU.Size = new System.Drawing.Size(76, 75);
+            this.btnNoGPU.TabIndex = 101;
+            this.btnNoGPU.UseVisualStyleBackColor = true;
+            this.btnNoGPU.Click += new System.EventHandler(this.btnNoGPU_Click);
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -804,15 +816,16 @@
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1312, 690);
             this.Controls.Add(this.panelGPU);
-            this.Controls.Add(this.panelCPU);
-            this.Controls.Add(this.panelRAM);
             this.Controls.Add(this.panelHDD);
             this.Controls.Add(this.lblSettings);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panelSystem);
+            this.Controls.Add(this.panelCPU);
+            this.Controls.Add(this.panelRAM);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "Settings";
             this.Text = "System Viewer > Settings";
             this.Load += new System.EventHandler(this.Settings_Load);
@@ -903,5 +916,6 @@
         private System.Windows.Forms.RadioButton rdbtnCelsius;
         private System.Windows.Forms.TextBox textBoxTempCpu;
         private System.Windows.Forms.TextBox textBoxTempGpu;
+        private System.Windows.Forms.Button btnNoGPU;
     }
 }

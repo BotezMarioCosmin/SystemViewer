@@ -18,17 +18,17 @@ namespace SystemViewer
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]//per bordi tondi
         private static extern IntPtr CreateRoundRectRgn
         (
-            int nLeftRect,     // x-coordinate of upper-left corner
-            int nTopRect,      // y-coordinate of upper-left corner
-            int nRightRect,    // x-coordinate of lower-right corner
-            int nBottomRect,   // y-coordinate of lower-right corner
-            int nWidthEllipse, // width of ellipse
-            int nHeightEllipse // height of ellipse
+            int nLeftRect,     // coordinata x alto sinistra
+            int nTopRect,      // coordinata y alto sinistra
+            int nRightRect,    // coordinata x basso destra
+            int nBottomRect,   // coordinata y basso destra
+            int nWidthEllipse, // larghezza
+            int nHeightEllipse // altezza
         );
         public Form1()
         {
             InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 75, 75));//criteri dei bordi
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 75, 75));//criteri dei bordi
         }
         private void startupTimer_Tick(object sender, EventArgs e)
         {
