@@ -53,8 +53,8 @@
             this.settingsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(984, 29);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1312, 36);
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -63,7 +63,7 @@
             this.homeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.homeToolStripMenuItem.Image = global::SystemViewer.Properties.Resources.home;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(84, 25);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(99, 32);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
@@ -72,7 +72,7 @@
             this.settingsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.settingsToolStripMenuItem.Image = global::SystemViewer.Properties.Resources.settings;
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(98, 25);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(117, 32);
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
@@ -82,9 +82,10 @@
             this.lbl0.AutoSize = true;
             this.lbl0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl0.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl0.Location = new System.Drawing.Point(10, 397);
+            this.lbl0.Location = new System.Drawing.Point(13, 489);
+            this.lbl0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl0.Name = "lbl0";
-            this.lbl0.Size = new System.Drawing.Size(363, 24);
+            this.lbl0.Size = new System.Drawing.Size(458, 29);
             this.lbl0.TabIndex = 101;
             this.lbl0.Text = "More features coming in the next update...";
             // 
@@ -94,9 +95,10 @@
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl1.Location = new System.Drawing.Point(10, 275);
+            this.lbl1.Location = new System.Drawing.Point(13, 338);
+            this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(322, 24);
+            this.lbl1.Size = new System.Drawing.Size(407, 29);
             this.lbl1.TabIndex = 102;
             this.lbl1.Text = "N/D means No data have been found";
             // 
@@ -106,9 +108,10 @@
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl2.Location = new System.Drawing.Point(10, 223);
+            this.lbl2.Location = new System.Drawing.Point(13, 274);
+            this.lbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(94, 24);
+            this.lbl2.Size = new System.Drawing.Size(122, 29);
             this.lbl2.TabIndex = 103;
             this.lbl2.Text = "GPU error";
             // 
@@ -118,9 +121,10 @@
             this.lbl3.AutoSize = true;
             this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl3.Location = new System.Drawing.Point(10, 170);
+            this.lbl3.Location = new System.Drawing.Point(13, 209);
+            this.lbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(211, 24);
+            this.lbl3.Size = new System.Drawing.Size(268, 29);
             this.lbl3.TabIndex = 104;
             this.lbl3.Text = "Temp and vram support";
             // 
@@ -130,9 +134,10 @@
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl.Location = new System.Drawing.Point(10, 522);
+            this.lbl.Location = new System.Drawing.Point(13, 642);
+            this.lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(106, 24);
+            this.lbl.Size = new System.Drawing.Size(136, 29);
             this.lbl.TabIndex = 105;
             this.lbl.Text = "Created by:";
             // 
@@ -142,9 +147,10 @@
             this.lbl4.AutoSize = true;
             this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl4.Location = new System.Drawing.Point(10, 43);
+            this.lbl4.Location = new System.Drawing.Point(13, 53);
+            this.lbl4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(198, 29);
+            this.lbl4.Size = new System.Drawing.Size(243, 36);
             this.lbl4.TabIndex = 106;
             this.lbl4.Text = "INFORMATIONS";
             // 
@@ -154,9 +160,10 @@
             this.lbl5.AutoSize = true;
             this.lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl5.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl5.Location = new System.Drawing.Point(10, 97);
+            this.lbl5.Location = new System.Drawing.Point(13, 119);
+            this.lbl5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(111, 24);
+            this.lbl5.Size = new System.Drawing.Size(143, 29);
             this.lbl5.TabIndex = 107;
             this.lbl5.Text = "Boost mode";
             // 
@@ -166,18 +173,19 @@
             this.lbl7.AutoSize = true;
             this.lbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl7.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl7.Location = new System.Drawing.Point(10, 335);
+            this.lbl7.Location = new System.Drawing.Point(13, 412);
+            this.lbl7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl7.Name = "lbl7";
-            this.lbl7.Size = new System.Drawing.Size(172, 24);
+            this.lbl7.Size = new System.Drawing.Size(221, 29);
             this.lbl7.TabIndex = 108;
             this.lbl7.Text = "CPU pie chart color";
             // 
             // Informations
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ClientSize = new System.Drawing.Size(1312, 690);
             this.Controls.Add(this.lbl7);
             this.Controls.Add(this.lbl5);
             this.Controls.Add(this.lbl4);
@@ -188,7 +196,8 @@
             this.Controls.Add(this.lbl0);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "Informations";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "System VIewer - Home > Informations";

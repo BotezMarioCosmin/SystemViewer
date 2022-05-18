@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Management;
 
 namespace SystemViewer
 {
@@ -17,7 +16,7 @@ namespace SystemViewer
         "GPU temperature and Vram is currently only supported by Nvidia video cards.", "Created by:  ", "INFORMATIONS",
         "Boost mode :   temporarily let the processor consume more energy"+Environment.NewLine+" in exchange for a temporary increase in processing speed."};
         string[] itHome = { "Home", "Impostazioni", "Errore GPU", "N/D significa che l'informazione non è disponibile.", "Più caratteristiche saranno disponibili nei prossimi aggiornamenti...",
-        "La temperatura della GPU e la Vram è attualente supportata solo da schede video Nvidia.", "Realizzato da:  ", "INFORMAZIONI",
+        "La temperatura della GPU e la Vram è attualmente supportata solo da schede video Nvidia.", "Realizzato da:  ", "INFORMAZIONI",
         "Boost mode :   consente temporaneamente al processore di consumare"+Environment.NewLine+"più energia in cambio di un aumento temporaneo della velocità di elaborazione."};
         public Informations()
         { 

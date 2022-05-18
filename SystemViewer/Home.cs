@@ -79,6 +79,7 @@ namespace SystemViewer
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         public static string gpuErrorMessage;
+        public static bool noGPU = false;
         int i;
         float flt, y;
         string ramsize, name;
@@ -358,16 +359,16 @@ namespace SystemViewer
                     }
                 }
             }
-
+            int ramAvailable;
 
 
             //RAM
-            float Ramgb = ramtotMB();//senza questo il form lagga
+            float RamTotMB = ramtotMB();//senza questo il form lagga
 
-            ramused = (int)RAM.NextValue();
-            lblavailable.Text = systemLanguage(enHome, itHome, 3) + ": " + ramused + " MB"; //RAM%                       
-            lblused.Text = systemLanguage(enHome, itHome, 5) + ": " + Convert.ToString(Ramgb - (ramused * 1024 / 1000)) + " MB"; //RAM utilizzata + conversione
-            rampercent = 100 - (ramused * 100 / (int)Ramgb);
+            ramAvailable = (int)RAM.NextValue();
+            lblavailable.Text = systemLanguage(enHome, itHome, 3) + ": " + ramAvailable + " MB"; //RAM                     
+            lblused.Text = systemLanguage(enHome, itHome, 5) + ": " + Convert.ToString(RamTotMB - ramAvailable) + " MB"; //RAM utilizzata + conversione
+            rampercent = 100 - (ramAvailable * 100 / (int)RamTotMB);
             crclprgrsbrRam.Value = rampercent;
             crclprgrsbrRam.Text = rampercent + "%";
             //RAM progress color
@@ -518,6 +519,7 @@ namespace SystemViewer
             }
             catch (Exception ex)
             {
+                noGPU = true;
                 forminf = true;
                 gpuErrorMessage = ex.Message;
                 lblGpuVram.Text = "VRAM: N/D";

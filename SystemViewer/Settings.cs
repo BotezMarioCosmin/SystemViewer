@@ -17,8 +17,8 @@ namespace SystemViewer
         public static float temperaturamaxCPU = 70, temperaturamaxCPUf = 158;
         public static float temperaturamaxGPU = 70, temperaturamaxGPUf = 158;
         public static int CpuColor = 0, RamColor = 0, HddColor = 0;
-        string[] enSettings = { "Home", "Informations", "SETTINGS", "System", "Set", "Pie chart color", "Language", "Temperature", "App theme", "Default", "Percentage", "Custom" };
-        string[] itSettings = { "Home", "Informazioni", "IMPOSTAZIONI", "Sistema", "Impostato", "Colore grafico a torta", "Lingua", "Temperatura", "Tema app", "Predefinito", "Percentuale", "Personalizzato" };
+        string[] enSettings = { "Home", "Informations", "SETTINGS", "System", "Set", "Pie chart color", "Language", "Temperature", "App theme", "Default", "Percentage"};
+        string[] itSettings = { "Home", "Informazioni", "IMPOSTAZIONI", "Sistema", "Impostato", "Colore grafico a torta", "Lingua", "Temperatura", "Tema app", "Predefinito", "Percentuale"};
         public static int FormColor;
 
         public Settings()
@@ -107,6 +107,13 @@ namespace SystemViewer
             {
                 btnTheme3_Click(sender, e);
             }
+
+            btnNoGPU.Hide();
+            btnNoGPU.BackgroundImage = Properties.Resources.crossred;
+            btnNoGPU.BackgroundImageLayout = ImageLayout.Stretch;
+            btnNoGPU.TabStop = false;
+            btnNoGPU.FlatStyle = FlatStyle.Flat;
+            btnNoGPU.FlatAppearance.BorderSize = 0;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -122,6 +129,19 @@ namespace SystemViewer
                 lblLanguage.Text = systemLanguage(enSettings, itSettings, 6);
                 lblTemperature.Text = systemLanguage(enSettings, itSettings, 7);
                 lblApptheme.Text = systemLanguage(enSettings, itSettings, 8);
+                lblWarningWhenGPU.Text = "Mostra un'avvertenza quando la temperatura della GPU è più alta di:";
+                lblWarningWhenCPU.Text = "Mostra un'avvertenza quando la temperatura della CPU è più alta di:";
+                lblSetTempGPU.Text = systemLanguage(enSettings, itSettings, 4) + " :";
+                lblSet.Text = systemLanguage(enSettings, itSettings, 4) + " :";
+                rdbtnDefaultCPU.Text = systemLanguage(enSettings, itSettings, 9);
+                rdbtnDefaultRAM.Text = systemLanguage(enSettings, itSettings, 9);
+                rdbtnDefaultHDD.Text = systemLanguage(enSettings, itSettings, 9);
+                rdbtnPercentageHDD.Text = systemLanguage(enSettings, itSettings, 10);
+                rdbtnPercentageRAM.Text = systemLanguage(enSettings, itSettings, 10);
+                rdbtnPercentageCpu.Text = systemLanguage(enSettings, itSettings, 10);
+                lblPieChartCPU.Text = systemLanguage(enSettings, itSettings, 5) + " :";
+                lblPieChartRAM.Text = systemLanguage(enSettings, itSettings, 5) + " :";
+                lblPieChartHDD.Text = systemLanguage(enSettings, itSettings, 5) + " :";
             }
             else
             {
@@ -131,6 +151,19 @@ namespace SystemViewer
                 lblLanguage.Text = systemLanguage(enSettings, itSettings, 6);
                 lblTemperature.Text = systemLanguage(enSettings, itSettings, 7);
                 lblApptheme.Text = systemLanguage(enSettings, itSettings, 8);
+                lblWarningWhenGPU.Text = "Show warning when GPU temperature is higher than:";
+                lblWarningWhenCPU.Text = "Show warning when CPU temperature is higher than:";
+                lblSetTempGPU.Text = systemLanguage(enSettings, itSettings, 4) + " :";
+                lblSet.Text = systemLanguage(enSettings, itSettings, 4) + " :";
+                rdbtnDefaultCPU.Text = systemLanguage(enSettings, itSettings, 9);
+                rdbtnDefaultRAM.Text = systemLanguage(enSettings, itSettings, 9);
+                rdbtnDefaultHDD.Text = systemLanguage(enSettings, itSettings, 9);
+                rdbtnPercentageHDD.Text = systemLanguage(enSettings, itSettings, 10);
+                rdbtnPercentageRAM.Text = systemLanguage(enSettings, itSettings, 10);
+                rdbtnPercentageCpu.Text = systemLanguage(enSettings, itSettings, 10);
+                lblPieChartCPU.Text = systemLanguage(enSettings, itSettings, 5) + " :";
+                lblPieChartRAM.Text = systemLanguage(enSettings, itSettings, 5) + " :";
+                lblPieChartHDD.Text = systemLanguage(enSettings, itSettings, 5) + " :";
             }
 
             //CPU grafico a torta colore
@@ -776,6 +809,12 @@ namespace SystemViewer
             lblA3.Show();
             panelGPU.Location = new Point(250, 140);
             panelGPU.Show();
+            btnNoGPU.Hide();
+            if (Home.noGPU == true)
+            {
+                //btnNoGPU.Location = new Point(500, 140);
+                btnNoGPU.Show();
+            }
         }
 
         private void lblRAM_Click(object sender, EventArgs e)
@@ -842,6 +881,17 @@ namespace SystemViewer
             {
                 lblHDD.ForeColor = Color.FromArgb(0, 200, 0);
             }
+        }
+
+        private void btnNoGPU_Click(object sender, EventArgs e)
+        {
+            Informations Informations = new Informations();
+            Informations.Show();
+            Informations.Left = this.Left;
+            Informations.Top = this.Top;
+            Informations.Size = this.Size;
+            timer1.Stop();
+            this.Hide();
         }
 
         private void lblCPU_MouseEnter(object sender, EventArgs e)
